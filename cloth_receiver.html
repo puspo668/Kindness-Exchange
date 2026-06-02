@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Receiver Information (Clothes)</title>
+  <link rel="stylesheet" href="cloth_receiver.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Receiver Information (Clothes)</h2>
+    <form action="cloth_reciever.php" method="POST">
+      <input type="text" name="name" placeholder="Enter Name" required><br>
+      
+      <label for="type">Receiver Type:</label>
+      <select name="type" required>
+          <option value="individual">Individual</option>
+          <option value="organization">Organization</option>
+      </select><br>
+      
+      <label for="division">Division:</label>
+      <select name="division" id="division" onchange="updateDistricts()" required>
+        <option value="">-- Select Division --</option>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chattogram">Chattogram</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Rajshahi">Rajshahi</option>
+        <option value="Barisal">Barisal</option>
+        <option value="Sylhet">Sylhet</option>
+        <option value="Rangpur">Rangpur</option>
+        <option value="Mymensingh">Mymensingh</option>
+      </select>
+      <input type="text" name="district" placeholder="Enter District" required><br>
+      <textarea name="address" placeholder="Enter Address" required></textarea><br>
+      <input type="text" name="phone" placeholder="Enter Phone Number" required><br>
+      <input type="email" name="email" placeholder="Enter Email" required><br>
+      <textarea name="clothes" placeholder="Enter Clothes Information" required></textarea><br>
+      
+      <button type="submit">Submit Request</button>
+  </form>
+  
+  </div>
+</body>
+</html>

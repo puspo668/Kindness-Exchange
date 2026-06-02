@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloth Donation Registration Form</title>
+  <link rel="stylesheet" href="cloth_donate.css">
+</head>
+<body background="donation.jpg">
+
+  <h2>Cloth Donation Registration Form</h2>
+
+  <form action="cloth_donate.php" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+
+    <!-- Division Dropdown -->
+    <label for="division">Division:</label>
+    <select id="division" name="division" required>
+      <option value="">-- Select Division --</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Chattogram">Chattogram</option>
+      <option value="Rajshahi">Rajshahi</option>
+      <option value="Khulna">Khulna</option>
+      <option value="Barishal">Barishal</option>
+      <option value="Sylhet">Sylhet</option>
+      <option value="Rangpur">Rangpur</option>
+      <option value="Mymensingh">Mymensingh</option>
+    </select>
+
+    <!-- District Dropdown -->
+    <label for="district">District:</label>
+    <input type="text" id="district" name="district" required>
+
+    
+    <label for="address">Address (from where our volunteer collects your donation):</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Cloth Types:</label>
+    <div class="checkbox-row">
+      <label><input type="checkbox" name="cloth_type" value="Shirt">Shirt</label>
+      <label><input type="checkbox" name="cloth_type" value="Pants">Pants</label>
+      <label><input type="checkbox" name="cloth_type" value="Jacket">Jacket</label>
+      <label><input type="checkbox" name="cloth_type" value="Dress">Dress</label>
+      <label><input type="checkbox" name="cloth_type" value="Others">Others</label>
+    </div>
+
+    <label for="gender">Clothes are suitable for:</label>
+    <select id="gender" name="cloth_gender" required>
+      <option value="">-- Select Gender --</option>
+      <option value="Men">Men</option>
+      <option value="Women">Women</option>
+      <option value="Unisex">Unisex</option>
+      <option value="Children">Children</option>
+    </select>
+
+    <label for="quantity">Quantity (Number of items):</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <div class="submit-btn">
+      <input type="submit" value="Submit Donation">
+    </div>
+   </form>
+
+</body>
+</html>

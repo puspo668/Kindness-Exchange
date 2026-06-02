@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipent Information for blood donation</title>
+    <link rel="stylesheet" href="blood_reciever.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h2>Recipient Information</h2></div>
+   
+
+    <form method="POST" action="blood_reciever.php">
+   <!used label tag for showing fullname & "input type="type of input" is used to create different type of text field>
+<!label value ,name & id value same>
+  <div>
+  <!we use 'required'keyword to ensure that this item is must be fill,'readonly'keyword is used to only read this item but can not write inside it>
+  <label for="name"> Name:</label><input type="text" placeholder="Enter your name" name="name" id="name" required>
+  </div></br>
+  <div>
+    <label for="division">Division:</label>
+     <select name="division">
+    <!to show initially selected any item,here we show that initially selected item is CSE> 
+   <option value="dhaka">DHAKA</option>
+   <option value="chittagong">CHITTAGONG</option>
+   <option value="rajshahi">RAJSHAHI</option>
+   <option value="khulna">KHULNA</option>
+   <option value="barisal">BARISAL</option>
+   <option value="sylhet">SYLHET</option>
+   <option value="rangpur">RANGPUR</option>
+   <option value="mymensingh">MYMENSINGH</option>
+    </select>
+    </div></br>
+    <div>
+        <!we use 'required'keyword to ensure that this item is must be fill,'readonly'keyword is used to only read this item but can not write inside it>
+        <label for="district"> District:</label><input type="text" placeholder="Enter your district name" name="district" id="district" required>
+        </div></br>
+  <div>
+            <!we use 'required'keyword to ensure that this item is must be fill,'readonly'keyword is used to only read this item but can not write inside it>
+            <label for="address"> Address:</label><input type="text" placeholder="Enter your address" name="address" id="address" >
+            </div></br>
+    <div>
+  <label for="email"> Email:</label><input type="email" placeholder="Enter your email" name="email" id="email">
+  </div></br>
+  <div><label for="phonenumber">Phone Number:</label><input type="text"placeholder="Enter your phone number" name="phonenumber" id="phonenumber" required>
+</div></br>  
+   
+    <div class="button-group">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </div>
+    
+    </form>
+    </div>
+    
+    
+</body>
+</html>

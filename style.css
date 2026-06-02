@@ -1,0 +1,93 @@
+/* Apply a full-screen background image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('registrationbackground.avif') ;
+  background-size: cover;
+}
+
+/* Form container with glassmorphism effect */
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  max-width: 500px;
+  margin: 60px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+/* Checkboxes container - centered and inline */
+.checkbox-group {
+  display: flex;
+  justify-content: center; /* centers the whole group */
+  gap: 20px; /* evenly spaces checkboxes */
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
