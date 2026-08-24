@@ -84,5 +84,15 @@ http://localhost/kindness_exchange/bookdon/homepage.php
 
 ## Developed By
 
-Puspo
-Computer Science & Engineering Student
+KUMARY PUSPO RANI
+
+Nusrat Jahan 
+
+Mehzabin Rahman 
+
+Israt Jahan puspo
+
+Md.Mamun Or Rashid
+
+Department of Computer Science & Engineering ,
+Jamalpur Science and Technology University
